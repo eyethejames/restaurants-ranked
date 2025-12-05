@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Restaurants Ranked</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="assets/icons/restaurant.ico" />
+  </head>
+  <body>
+    <!-- HEADER WITH CATEGORY NAME MODAL -->
+    <header>
+      <h1 id="category-title">Category name</h1>
+      <a href="index.html" class="btn">Back to categories</a>
+      <br />
+    </header>
+
+    <main>
+      <!-- SORTING SECTION -->
+      <div id="sorters" class="sorters">
+        <label for="sort-rating"
+          >Sort by rating:
+          <select id="sort-rating">
+            <option value="" selected>Date added (default)</option>
+            <option value="highest">Highest</option>
+            <option value="lowest">Lowest</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- CONTAINER FOR DYNAMIC LIST OF RESTAURANT REVIEWS -->
+      <div id="category-entries" class="category-entries"></div>
+    </main>
+
+    <!-- SHARED MODAL -->
+    <div id="entry-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <p id="modal-date"><em>Date</em></p>
+        <h3 id="modal-name">Restaurant name</h3>
+        <p id="modal-rating">Rating</p>
+        <p id="modal-price">Price</p>
+        <p id="modal-notes">Notes</p>
+      </div>
+    </div>
+
+    <script src="js/category.js"></script>
+
+    <!-- FOOTER WITH LINK TO PORTFOLIO MODAL -->
+    <footer>
+      <p>
+        © 2025 Jakob Kallevik | <a href="../portfolio/index.html">Home page</a>
+      </p>
+    </footer>
+  </body>
+</html>
